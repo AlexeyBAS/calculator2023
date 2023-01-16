@@ -21,7 +21,7 @@ public static String parse(String expression) throws Exception {
         if (oper == null) throw new Exception("Неподдерживаемая математическая операция");
 
         if (Roman.isRoman(operands[0]) && Roman.isRoman(operands[1])) {
-        //конвертируем оба числа в арабские для вычесления действия
+
         num1 = Roman.convertToArabian(operands[0]);
         num2 = Roman.convertToArabian(operands[1]);
         isRoman = true;
